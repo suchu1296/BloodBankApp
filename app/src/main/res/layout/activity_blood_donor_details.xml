@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.riya.bloodbank.BloodDonorDetails"
+    android:weightSum="1">
+    <TextView android:text="Blood Donor Details"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height ="382dp"
+        android:id="@+id/scrollView">
+        <LinearLayout  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:id="@+id/listView3" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height ="273dp"
+        android:id="@+id/scrollView1"
+        android:layout_weight="0.81">
+        <LinearLayout  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Information"
+        android:id="@+id/share"
+        android:onClick="OnShare"
+         />
+
+
+
+
+    <Button
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:onClick="OnBack"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

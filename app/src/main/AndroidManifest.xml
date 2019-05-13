@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.riya.bloodbank">
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/blood"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity">
+                <intent-filter>
+                    <action android:name="com.coderefer.androidsplashscreenexample.MAINACTIVITY" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+
+        <activity
+            android:name=".register_activity"
+            android:label="Register" />
+        <activity
+            android:name=".login_activity"
+            android:label="Login" />
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile" />
+        <activity android:name=".profile" />
+        <activity android:name=".instructions" />
+        <activity android:name=".BloodDonorDetails" />
+        <activity android:name=".splashscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
